@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="wpOceans">
+    <link rel="shortcut icon" type="image/png" href="assets/images/icon-apk-512x512.png">
+    <title>APK Architecture and Construction</title>
+    <link href="assets/css/themify-icons.css" rel="stylesheet">
+    <link href="assets/css/flaticon.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/owl.carousel.css" rel="stylesheet">
+    <link href="assets/css/owl.theme.css" rel="stylesheet">
+    <link href="assets/css/slick.css" rel="stylesheet">
+    <link href="assets/css/slick-theme.css" rel="stylesheet">
+    <link href="assets/css/swiper.min.css" rel="stylesheet">
+    <link href="assets/css/owl.transitions.css" rel="stylesheet">
+    <link href="assets/css/jquery.fancybox.css" rel="stylesheet">
+    <link href="assets/css/odometer-theme-default.css" rel="stylesheet">
+    <link href="assets/sass/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--=====start page-wrapper =====-->
+    <div class="page-wrapper">
+         <!--===== start preloader =====-->
+        <div class="preloader">
+            <div class="vertical-centered-box">
+                <div class="content">
+                    <div class="loader-circle"></div>
+                    <div class="loader-line-mask">
+                        <div class="loader-line"></div>
+                    </div>
+                    <img src="assets/images/preloader.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!--===== end preloader =====-->
+
+        <!--  cursor style -->
+        <div class="cursor"></div>
+        <div class="cursor2"></div>
+
+        <!--===== Start header =====-->
+        <header id="header">
+            <div class="topbar topbar-s2">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-lg-8 col-md-8 col-12">
+                            <ul class="contact-info">
+                                <li>
+                                    <a href="tel:+66804459517">
+                                        Call Us:
+                                        <span>+66 80 445 9517</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <span>
+                                        Email Us:
+                                    </span>
+                                    <span>info@pattayainterior.com</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="contact-into">
+                                <ul class="social-media">
+                                    <li><a href="#"><i class="ti-facebook"></i></a></li>
+                                    <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
+                                    <li><a href="#"><i class="ti-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="ti-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wpo-site-header wpo-header-style-s11">
+                <nav class="navigation navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="col-lg-3 col-md-3 col-3 d-lg-none dl-block">
+                                <div class="mobail-menu">
+                                    <button type="button" class="navbar-toggler open-btn">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar first-angle"></span>
+                                        <span class="icon-bar middle-angle"></span>
+                                        <span class="icon-bar last-angle"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-6">
+                                <div class="navbar-header">
+                                    <a class="navbar-brand" href="index.html"><img src="assets/images/logo-apk.png"
+                                            alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 col-md-1 col-1">
+                                <div id="navbar" class="collapse navbar-collapse navigation-holder">
+                                    <button class="menu-close"><i class="ti-close"></i></button>
+                                    <ul class="nav navbar-nav mb-2 mb-lg-0">
+                                        <li class="menu-item-has-children image-style-item">
+                                            <a href="index.html">Home</a>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="about.html">About Us</a>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="services.html">Our Services</a>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="#">Projects</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-2">
+                                <div class="header-right">
+                                    <div class="header-search-form-wrapper">
+                                        <div class="cart-search-contact">
+                                            <button class="search-toggle-btn"><i class="fi flaticon-loupe"></i></button>
+                                            <div class="header-search-form">
+                                                <form>
+                                                    <div>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Search here...">
+                                                        <button type="submit"><i class="fi flaticon-loupe"></i></button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="close-form">
+                                        <a class="theme-btn" href="contact.html">Contact Us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- end of container -->
+                </nav>
+            </div>
+        </header>
+        <!--===== end of header =====-->
+
+        <!--===== start wpo-page-title =====-->
+        <section class="wpo-page-title">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-xs-12">
+                        <div class="wpo-breadcumb-wrap">
+                            <ol>
+                                <li>Services</li>
+                            </ol>
+                            <h2 class="poort-text poort-in-right">Our Services</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--===== start wpo-service-section =====-->
+        <section class="wpo-service-section-s8 section-padding">
+            <div class="container-fluid p-0">
+                <div class="service-wrap">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-12 fade_bottom">
+                            <div class="service-card">
+                                <div class="icon">
+                                    <img src="assets/images/service/icon/living-room1.svg" alt="icon">
+                                </div>
+                                <h2><a href="service-single.html">Interior Design</a></h2>
+                                <p>Beautifully designed interiors uniquely tailored to reflect your lifestyle and personal taste. We create spaces that are both functional and aesthetically pleasing.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 fade_bottom">
+                            <div class="service-card">
+                                <div class="icon">
+                                    <img src="assets/images/service/icon/planning1.svg" alt="icon">
+                                </div>
+                                <h2><a href="service-single.html">Architectural Design</a></h2>
+                                <p>Transform your ideas into stunning architectural designs with our skilled architects. We blend creativity with functionality to create exceptional spaces.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 fade_bottom">
+                            <div class="service-card">
+                                <div class="icon">
+                                    <img src="assets/images/service/icon/buildings1.svg" alt="icon">
+                                </div>
+                                <h2><a href="service-single.html">Construction</a></h2>
+                                <p>Expert project management delivers timely construction with superior quality and cost efficiency. We ensure every detail meets the highest standards.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 fade_bottom">
+                            <div class="service-card">
+                                <div class="icon">
+                                    <img src="assets/images/service/icon/dining-room1.svg" alt="icon">
+                                </div>
+                                <h2><a href="service-single.html">Building Solutions</a></h2>
+                                <p>Eco-friendly and energy-efficient building practices for a greener future. We implement sustainable solutions that benefit both you and the environment.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 fade_bottom">
+                            <div class="service-card">
+                                <div class="icon">
+                                    <img src="assets/images/service/icon-4/contractor.svg" alt="icon">
+                                </div>
+                                <h2><a href="service-single.html">House Renovation</a></h2>
+                                <p>Transform your existing space with our comprehensive renovation services. We breathe new life into your home while preserving its character and charm.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 fade_bottom">
+                            <div class="service-card">
+                                <div class="icon">
+                                    <img src="assets/images/service/icon-4/engineering.svg" alt="icon">
+                                </div>
+                                <h2><a href="service-single.html">Project Management</a></h2>
+                                <p>Professional project management ensures your construction project stays on time and within budget. We coordinate all aspects for seamless execution.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 fade_bottom">
+                            <div class="service-card">
+                                <div class="icon">
+                                    <img src="assets/images/service/icon-4/excavator.svg" alt="icon">
+                                </div>
+                                <h2><a href="service-single.html">Site Development</a></h2>
+                                <p>Comprehensive site development services including excavation, foundation work, and site preparation. We lay the groundwork for your dream project.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 fade_bottom">
+                            <div class="service-card">
+                                <div class="icon">
+                                    <img src="assets/images/service/icon-4/property.svg" alt="icon">
+                                </div>
+                                <h2><a href="service-single.html">Consultation</a></h2>
+                                <p>Expert consultation services to help you make informed decisions about your project. We provide valuable insights and recommendations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--===== start wpo-funfact-section =====-->
+        <section class="wpo-funfact-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-12 fade_bottom">
+                        <div class="item">
+                            <h2><span class="odometer" data-count="215">00</span> <span class="icon">+</span></h2>
+                            <h3>CURRENT CLIENTS</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 fade_bottom">
+                        <div class="item">
+                            <h2><span class="odometer" data-count="550">00</span> <span class="icon">+</span></h2>
+                            <h3>PROJECTS COMPLETE</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 fade_bottom">
+                        <div class="item">
+                            <h2><span class="odometer" data-count="23">00</span> <span class="icon">+</span></h2>
+                            <h3>YEARS OF EXPERIENCE</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 fade_bottom">
+                        <div class="item">
+                            <h2><span class="odometer" data-count="25">00</span> <span class="icon">+</span></h2>
+                            <h3>OFFICES WORLDWIDE</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--===== start wpo-partners-section =====-->
+        <section class="wpo-partners-section fade_bottom">
+            <h2 class="d-none">No Content</h2>
+            <ul class="partners-slider">
+                <li>
+                    <div>
+                        <img src="assets/images/partners/1.png" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="assets/images/partners/2.png" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="assets/images/partners/3.png" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="assets/images/partners/4.png" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="assets/images/partners/5.png" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="assets/images/partners/2.png" alt="">
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!--===== start wpo-site-footer-section =====-->
+        <footer class="wpo-site-footer">
+            <div class="wpo-upper-footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col col-lg-3 col-md-6 col-sm-12 col-12 fade_bottom">
+                            <div class="widget about-widget">
+                                <div class="logo widget-title">
+                                    <img src="assets/images/logo-apk.png" alt="blog">
+                                </div>
+                                <p>APK Architecture and Construction is a one-stop solution build your dream home.</p>
+                                <div class="social-widget">
+                                    <ul>
+                                        <li>
+                                            <a href="#"><i class="ti-facebook"></i></a>
+                                            <a href="#"><i class="ti-twitter-alt"></i></a>
+                                            <a href="#"><i class="ti-linkedin"></i></a>
+                                            <a href="#"><i class="ti-instagram"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-lg-3 col-md-6 col-sm-12 col-12 fade_bottom">
+                            <div class="widget link-widget">
+                                <div class="widget-title">
+                                    <h3>Contact</h3>
+                                </div>
+                                <ul>
+                                    <li>info@pattayainterior.com</li>
+                                    <li>+66 80 445 9517</li>
+                                    <li>549/220, Life In the Garden Moo 3</li>
+                                    <li> Sriracha Chon Buri 20110</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col col-lg-3 col-md-6 col-sm-12 col-12 fade_bottom">
+                            <div class="widget link-widget">
+                                <div class="widget-title">
+                                    <h3>Quick Link</h3>
+                                </div>
+                                <ul>
+                                    <li><a href="about.html"><span class="rolling-text">About Us</span> </a></li>
+                                    <li><a href="services.html"><span class="rolling-text">Services</span> </a></li>
+                                    <li><a href="projects.html"><span class="rolling-text">Projects</span></a></li>
+                                    <li><a href="blog.html"><span class="rolling-text">Blog</span> </a></li>
+                                    <li><a href="contact.html"><span class="rolling-text">Contact</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col col-lg-3 col-md-6 col-sm-12 col-12 fade_bottom">
+                            <div class="widget newsletter-widget">
+                                <div class="widget-title">
+                                    <h3>Newsletter</h3>
+                                </div>
+                                <form>
+                                    <input type="email" class="input-fild" placeholder="Your Email...">
+                                    <button>Subscribe</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wpo-lower-footer">
+                <div class="container-fluid">
+                    <div class="row g-0">
+                        <div class="col col-lg-6 col-12">
+                            <p class="copyright"> Copyright &copy; 2025 APK GROUP (THAILAND) CO.,LTD. All
+                                Rights Reserved.</p>
+                        </div>
+                        <div class="col col-lg-6 col-12">
+                            <ul class="right">
+                                <li><a href="privace.html"><span class="rolling-text">Privace & Policy</span> </a></li>
+                                <li><a href="terms.html"><span class="rolling-text">Terms</span></a></li>
+                                <li><a href="#"><span class="rolling-text">Sitemap</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!--===== end page-wrapper =====-->
+
+    <!--===== All JavaScript files =====-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--===== Plugins for this template =====-->
+    <script src="assets/js/modernizr.custom.js"></script>
+    <script src="assets/js/jquery-plugin-collection.js"></script>
+    <script src="assets/js/gsap.js"></script>
+    <script src="assets/js/gsap-scroll-smoother.js"></script>
+    <script src="assets/js/SmoothScroll.js"></script>
+    <script src="assets/js/gsap-scroll-trigger.js"></script>
+    <script src="assets/js/gsap-split-text.js"></script>
+    <script src="assets/js/simpleParallax.js"></script>
+    <!--===== Custom script for this template =====-->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/gsap-script.js"></script>
+</body>
+
+</html>
